@@ -15,7 +15,9 @@ public class Run {
                             + "3. Cập nhập" + "\n"
                             + "4. Xoá" + "\n"
                             + "5. Sắp xếp" + "\n"
-                            + "6. Tìm sản phẩm có giá đắt nhất"
+                            + "6. Tìm sản phẩm có giá đắt nhất" + "\n"
+                            + "0. Exit" + "\n"
+                            + "Chọn chức năng:"
             );
             int choice = scanner.nextInt();
 
@@ -33,7 +35,15 @@ public class Run {
                     controller.delete();
                     break;
                 case 5:
+                    controller.sort();
+                    break;
                 case 6:
+                    controller.findPriceMax();
+                    break;
+                case 0:
+                    controller.exit();
+                    System.exit(0);
+                    break;
             }
         }
     }

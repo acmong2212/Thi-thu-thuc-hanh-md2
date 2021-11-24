@@ -6,5 +6,6 @@ public interface Manager {
     public void update();
     public void delete();
     public void sort();
-    public int find();
+    public void findPriceMax();
+    public void exit();
 }
